@@ -1,0 +1,117 @@
+body{
+	background: #f3f2ee;
+}
+.staatliches{
+	font-family: 'Staatliches', sans-serif;
+}
+.montserrat{
+	font-family: 'Montserrat', sans-serif;
+}
+nav img{
+	height: 60px;
+    vertical-align: middle;
+}
+nav{
+	background: linear-gradient(to right, #673AB7, #E91E63);
+	height: 64px;
+}
+nav a{
+    width: 100%;
+}
+#hero{
+	min-height: calc(100vh - 64px);
+	background-image: url(images/wallpaper.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+}
+#hero div{
+	margin: 15px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#hero h1{
+	font-size: 65px;
+	margin: 0;
+}
+#hero h4{
+	font-size: 25px;
+	margin: 0 0 25px 0;
+}
+#hero p{
+	font-size: 18px;
+}
+#hero hr{
+	border: 1px solid #fff;
+	width: 150px;
+	margin: 0;
+}
+#hero img{
+	width: 100px;
+}
+footer{
+	background: linear-gradient(to bottom left, #4CAF50, #3F51B5);
+}
+footer h1{
+	font-size: 40px;
+	margin: 0;
+}
+footer h4{
+	font-size: 25px;
+	margin: 0 0 25px 0;
+}
+footer p{
+	font-size: 16px;
+}
+footer hr{
+	border: 1px solid #fff;
+	width: 100px;
+	margin: 0;
+}
+
+#loader{
+	position: fixed;
+    background: linear-gradient(to bottom, #ffffff, #FF5722);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding: 30vh 0 0 0;
+    z-index: 99;
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+#gotoMusic, #newMusicName{
+	display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 5px 10px;
+    border: 0;
+    box-shadow: 2px 2px 2px #aaa9a3;
+    font-size: 25px;
+    font-family: monospace;
+    outline: 0;
+}
+#gotoMusicBtn, #newMusic{
+	font-size: 25px;
+}
+#console img{
+	width: 100%;
+	display: block;
+}
+
+.dividerImg{
+	height: 150px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+#console .dividerImg:nth-child(2){
+	background-image: url(images/bg2.jpg);
+}
+#console .dividerImg:nth-child(4){
+	background-image: url(images/bg3.jpg);
+}

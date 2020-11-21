@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Crowdically - Crowdsourced Music!</title>
+    <link href="../images/icon.png" rel="shortcut icon"/>	
+	<link href="../css/fontawesome-all.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat=400,500|Staatliches&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+	  	<div id="loader">
+			  <div class="preloader-wrapper big active"><div class="spinner-layer spinner-blue"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-red"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-yellow"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div><div class="spinner-layer spinner-green"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div></div>
+		</div>
+	  	<nav class="staatliches">
+    		<div class="nav-wrapper">
+      			<a href="../" class="brand-logo center">
+					<img src="../images/icon.png">
+					<span>Crowdically</span>
+				</a>
+    		</div>
+  		</nav>
+		<div id="notFound" class="hidden center">
+			<div class="container">
+				<h4 class="staatliches red-text text-darken-2">Could not Find the <span class="blue-text">Music</span> you were looking for.</h4>
+				<p class="montserrat">The Music ID you specified does not exist. Try checking the ID, or create a  <a class="red-text text-darken-2" href="../">New Crowdically Music</a>.</p>
+				<a href="../" class="staatliches green btn waves effect">Return</a>
+			</div>
+		</div>
+		<div id="console">
+			<div class="container">
+				<h2 id="musicName" class="staatliches red-text text-darken-2"></h2>
+				<span id="musicID" class="blue darken-2 white-text"></span>
+				<blockquote><i class="fas fa-info-circle green-text text-darken-2"></i> You can invite your friends to remix this <span class="montserrat">Music</span> with you, <strong>by sharing the Music's Link,</strong> <a class="staatliches blue-text text-darken-2" id="musicLink"></a> or the Music ID, <span class="staatliches red-text text-darken-2" id="musicIDInfo"></span>.</blockquote>
+				<br>
+				<a class="modal-trigger btn waves-effect pink white-text darken-2 staatliches" href="#addNoteModal" id="addNoteModalTrigger"><i class="fas fa-music"></i> Add a Note to the Music!</a>
+				<br><br>
+				<button class="btn waves-effect orange black-text darken-1 staatliches" id="playMusic"><i class="fas fa-play"></i> Play Music</button><br><br>
+				<div id="timeline"></div>
+			</div>
+		</div>
+		<div id="addNoteModal" class="modal modal-fixed-footer">
+    		<div class="modal-content">
+     	 		<h4 class="staatliches pink-text text-darken-2"><i class="fas fa-music"></i> Add a Note</h4>
+				<blockquote class="montserrat">
+					Click on the Buttons in the Grid Below to add Tones in your music.<br>Tones in the same row are played at once. The Rows are played from Top to Bottom.
+				</blockquote>
+				<br>
+				<div id="addNoteGrid">
+					<div>
+						<button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button>
+					</div>
+					<div>
+						<button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button>
+					</div>
+					<div>
+						<button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button>
+					</div>
+					<div>
+						<button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button>
+					</div>
+					<div>
+						<button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button>
+					</div>
+					<div>
+						<button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button>
+					</div>
+					<div>
+						<button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button><button><i class="fa fa-star"></i></button>
+					</div>
+				</div>
+				<br>
+				<button id="addNotePreview" class="btn blue white-text darken-2 staatliches"><i class="fas fa-play"></i> Preview</button>
+				<br><br>
+				<div class="row">
+					<div class="input-field col s12 m6">
+    					<select id="addNoteInstrument">
+      						<option value="0" selected>Synthesiser</option>
+  	    					<option value="1">Membrane Synthesiser</option>
+      						<option value="2">Metal Synthesiser</option>
+      						<option value="3">Pluck Synthesiser</option>
+    					</select>
+    					<label>Select Instrument</label>
+  					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12 m6">
+    					<select id="addNoteDuration">
+      						<option value="4">Quarter Note</option>
+      						<option value="8" selected>Half Note</option>
+      						<option value="16">Complete Note</option>
+    					</select>
+    					<label>Select Duration</label>
+	  				</div>
+				</div>
+				<h6 class="montserrat"><b>Select Timings</b></h6>
+				<label>Select when this note should start in your music, in seconds.<br>Timings are calculated since the beginning of the music.</label>
+				<form><p class="range-field">
+      				<input type="range" id="addNoteTime" value="0" min="0" max="50" />
+    			</p></form>
+				<b><p class="montserrat" id="addNoteTimeLabel">0 seconds</p></b>
+    		</div>
+   			<div class="modal-footer">
+      			<button class="modal-close waves-effect waves-green btn-flat">Close</button>
+      			<button class="waves-effect waves-green green btn darken-2 staatliches white-text modal-close" id="addNoteBtn">Add Note</button>
+    		</div>
+  		</div>
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h1 class="staatliches">Crowdically</h1>
+				<h4 class="staatliches">Crowdsourced Music!</h4>
+				<hr>
+				<p class="montserrat">Where everybody makes music - together!</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container montserrat">
+            Made with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i> in India.        
+            </div>
+          </div>
+        </footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.8.17/Tone.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    	<script src="script.js"></script>
+  </body>
+</html>

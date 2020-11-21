@@ -1,0 +1,125 @@
+.hidden{display: none;}
+body{
+	background: #f3f2ee;
+}
+.staatliches{
+	font-family: 'Staatliches', sans-serif;
+}
+.montserrat{
+	font-family: 'Montserrat', sans-serif;
+}
+nav img{
+	height: 60px;
+    vertical-align: middle;
+}
+nav{
+	background: linear-gradient(to right, #673AB7, #E91E63);
+	height: 64px;
+}
+nav a{
+    width: 100%;
+}
+footer{
+	background: linear-gradient(to bottom left, #4CAF50, #3F51B5);
+}
+footer h1{
+	font-size: 40px;
+	margin: 0;
+}
+footer h4{
+	font-size: 25px;
+	margin: 0 0 25px 0;
+}
+footer p{
+	font-size: 16px;
+}
+footer hr{
+	border: 1px solid #fff;
+	width: 100px;
+	margin: 0;
+}
+
+#loader{
+	position: fixed;
+    background: linear-gradient(to bottom, #ffffff, #FF5722);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding: 30vh 0 0 0;
+    z-index: 99;
+    opacity: 0.8;
+    overflow: hidden;
+}
+#notFound p{
+	font-size: 18px;
+}
+#notFound a{
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+#musicID{
+	font-size: 18px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-family: Montserrat;
+    font-weight: 700;
+    display: block;
+    width: fit-content;
+    margin: 0 0 10px 0;
+}
+#musicName{
+	margin-bottom: 0;
+}
+
+#addNoteModalTrigger, #playMusic{
+	font-size: 25px;
+}
+#addNoteModal .modal-content{
+	overflow-x: hidden;
+}
+#addNoteGrid{
+	position: relative;
+    left: -24px;
+    width: calc(100% + 48px);
+}
+#addNoteGrid > div{
+	text-align: center;
+}
+#addNoteGrid button{
+    width: calc(100% / 7);
+    border: 0;
+    max-width: 50px;
+    height: 30px;
+    cursor: pointer;
+	color: #666;
+	background: #bbb;
+	transition: all 0.3s;
+}
+#addNoteGrid button.active{
+	color: #fff;
+}
+#addNoteGrid button.active:nth-child(1){
+	background: #E91E63;
+}
+#addNoteGrid button.active:nth-child(2){
+	background: #9C27B0;
+}
+#addNoteGrid button.active:nth-child(3){
+	background: #009688;
+}
+#addNoteGrid button.active:nth-child(4){
+	background: #3F51B5;
+}
+#addNoteGrid button.active:nth-child(5){
+	background: #F44336;
+}
+#addNoteGrid button.active:nth-child(6){
+	background: #607D8B;
+}
+#addNoteGrid button.active:nth-child(7){
+	background: #795548;
+}
+#addNoteBtn, #addNotePreview{
+	font-size: 20px;
+}
